@@ -248,8 +248,8 @@ func init() {
 	// These are tied to the version of LLVM directly in external/llvm, so they might trail the host prebuilts
 	// being used for the rest of the build process.
 	pctx.SourcePathVariable("RSClangBase", "prebuilts/clang/host")
-	pctx.SourcePathVariable("RSClangVersion", "clang-r383902b1")
-	pctx.SourcePathVariable("RSReleaseVersion", "11.0.2")
+	pctx.SourcePathVariable("RSClangVersion", "clang-r416183")
+	pctx.SourcePathVariable("RSReleaseVersion", "12.0.4")
 	pctx.StaticVariable("RSLLVMPrebuiltsPath", "${RSClangBase}/${HostPrebuiltTag}/${RSClangVersion}/bin")
 	pctx.StaticVariable("RSIncludePath", "${RSLLVMPrebuiltsPath}/../lib64/clang/${RSReleaseVersion}/include")
 
